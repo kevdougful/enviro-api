@@ -1,0 +1,37 @@
+{
+  "name": "Location",
+  "plural": "locations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "geo": {
+      "type": "geopoint"
+    },
+    "building": {
+      "type": "string"
+    },
+    "room": {
+      "type": "string"
+    },
+    "height": {
+      "type": "number"
+    },
+    "heightUnit": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

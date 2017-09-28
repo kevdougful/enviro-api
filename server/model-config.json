@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "enviro"
+  },
+  "AccessToken": {
+    "dataSource": "enviro",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "enviro",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "enviro",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Location": {
+    "dataSource": "enviro",
+    "public": true
+  },
+  "Device": {
+    "dataSource": "enviro",
+    "public": true
+  },
+  "Measurement": {
+    "dataSource": "enviro",
+    "public": true
+  },
+  "Group": {
+    "dataSource": "enviro",
+    "public": true
+  },
+  "Member": {
+    "dataSource": "enviro",
+    "public": true
+  }
+}

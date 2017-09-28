@@ -1,0 +1,41 @@
+{
+  "name": "Device",
+  "plural": "devices",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "macAddress": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "groups": {
+      "type": "hasMany",
+      "model": "Group",
+      "foreignKey": "deviceId",
+      "through": "Member"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

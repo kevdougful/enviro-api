@@ -1,0 +1,27 @@
+{
+  "name": "Measurement",
+  "plural": "measurements",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dateMeasured": {
+      "type": "date",
+      "required": true
+    },
+    "value": {
+      "type": "any",
+      "required": true
+    },
+    "valueUnit": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
